@@ -1,0 +1,396 @@
+/* Estilos futuristas */
+body {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+header, footer {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00f;
+    font-weight: bold;
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0f0;
+}
+
+/* Estilo para efectos futuristas con transiciones y animaciones */
+#seccion-principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccion {
+    flex: 1;
+    padding: 20px;
+    transition: background-color 0.5s, transform 0.5s;
+    text-align: center;
+}
+
+/* Agrega la imagen de fondo al elemento "Estudios" */
+#estudios {
+    background-image: url("https://th.bing.com/th/id/OIG.obQAUf2zTaT2pamNp365?pid=ImgGn");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff; /* Color del texto */
+    text-shadow: 2px 2px 4px red; /* Sombra de texto */
+}
+
+.seccion:hover {
+    background-color: #222;
+    transform: scale(1.05);
+}
+
+/* Estilo futurista para títulos y párrafos */
+h2 {
+    color: #0f0;
+    font-size: 36px;
+}
+h4 {
+    color: aqua;
+    font-size: 55px;
+}
+
+p {
+    color: gold;
+    font-size: 33px;
+}
+
+/* Nuevas secciones "Proyección Profesional" y "Proyectos en Curso" */
+#proyeccion-profesional, #proyectos-en-curso {
+    display: flex;
+    justify-content: space-between;
+}
+
+.proyeccion, .proyectos {
+    flex: 1;
+    padding: 20px;
+    transition: background-color 0.5s, transform 0.5s;
+    text-align: center;
+}
+
+.proyeccion:hover, .proyectos:hover {
+    background-color: #222;
+    transform: scale(1.05);
+}
+
+/* Efectos de transición en imágenes */
+img {
+    max-width: 100%;
+    transition: transform 0.5s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para botones */
+.boton {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin: 5px;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el menú horizontal */
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+/* Estilo para mostrar el menú cuando el checkbox está marcado */
+#check:checked + #menu {
+    display: block;
+}
+
+/* Estilo para ocultar el menú cuando el checkbox no está marcado */
+#menu {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+/* Estilo para los elementos del menú desplegable */
+#menu li {
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Estilo para enlaces de interés en el pie de página */
+#enlaces-interes {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#enlaces-interes a {
+    text-decoration: none;
+    color: #00f;
+    font-weight: bold;
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+
+#enlaces-interes a:hover {
+    color: #0f0;
+}
+
+header nav {
+    height: 80px;
+    float: right;
+  }
+  
+  nav ul.menu {
+    float: right;
+  }
+  
+  nav ul.menu li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  nav ul.menu li a {
+    color: #eee;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 7px 7px;
+  }
+  
+/* Ajusta el tamaño de las imágenes en las secciones "Proyección Profesional" y "Proyectos en Curso" al 33% */
+#proyeccion-profesional img,
+#proyectos-en-curso img {
+    max-width: 33%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    header {
+      background-color: burlywood;
+    }
+  
+    .checkbtn {
+      display: block;
+    }
+  
+    .navbar {
+      height: 0vh;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background: #2c3e50;
+      text-align: center;
+  
+      transition: all 0.5s;
+      overflow: hidden;
+    }
+  
+    .navbar ul.menu {
+      float: none;
+      display: block;
+      width: 174px;
+      margin: 0 auto;
+      opacity: 0;
+    }
+  
+    .navbar ul.menu li a:hover {
+      color: #b59a61;
+    }
+    /* ACTIVE */
+    .navbar.active {
+      height: 100vh;
+    }
+  
+    .navbar.active ul.menu {
+      opacity: 1;
+    }
+  }
+  /* ------------- CSS General ------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #5d6063;
+    background-color: #eaedf0;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+  }
+  
+  /* ------------- Encabezado Contacto ------------- */
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"],  .form-row input[type="email"]
+   {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+  /* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"] {
+      width: 250px;
+      height: initial;
+    }
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+  }
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+  /* ------------- Para Pantallas de más de 700px ------------- */
+  
+  
+  .form-row textarea {
+      width: 250px;
+    }
+    .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+      
+      
+        color: #ffffff;
+        background-color: #5995da;
+      
+      
+        border: none;
+        border-radius: 3px;
+      
+      
+        padding: 10px 40px;
+        cursor: pointer;
+      }
+      
+      
+      .form-row button:hover {
+        background-color: #76aeed;
+      }
+      
+      
+      .form-row button:active {
+        background-color: #407fc7;
+      }
+      
+      
+      /* ------------- Para Pantallas de más de 700px ------------- */
+      
+      
+      .form-row button {
+          margin-left: 120px;
+        }        
