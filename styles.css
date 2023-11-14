@@ -394,3 +394,13 @@ header nav {
       .form-row button {
           margin-left: 120px;
         }        
+
+.greting{
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
